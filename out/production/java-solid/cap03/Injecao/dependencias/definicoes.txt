@@ -1,0 +1,12 @@
+Acoplamento do tipo
+Agregação é uma associação em que um objeto é parte de outro, de tal forma que a parte pode existir sem o todo.
+
+Acomplamento ocorre quando uma classe (todo)
+depende de varias outras classes (parte), e qualquer mudanca nessas classes podem fazer o (todo) quebrar
+
+A partir do momento em que uma classe possui muitas dependencias, todas elas podem propagar problemas para a classe
+principal.
+
+
+A melhor forma de diminuir o acoplamento, e programar
+orientacdo a interfaces,
