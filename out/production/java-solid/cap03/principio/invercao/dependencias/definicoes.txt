@@ -1,0 +1,48 @@
+Acoplamento do tipo
+Agregação é uma associação em que um objeto é parte de outro, de tal forma que a parte pode existir sem o todo.
+
+Acomplamento ocorre quando uma classe (todo)
+depende de varias outras classes (parte), e qualquer mudanca nessas classes podem fazer o (todo) quebrar
+
+A partir do momento em que uma classe possui muitas dependencias, todas elas podem propagar problemas para a classe
+principal.
+
+Exemplos de classe estaveis List, String etc, nossas classes devem ser estaveis
+
+A melhor forma de diminuir o acoplamento, e programar
+orientacdo a interfaces, claro se a classes que fazem parte da classe principal mudarem muitas vezes
+
+Padroes de projeto que ajudam a diminuir o acoplamento entre classes são eles
+Observer, Visitor e Factory
+Estuda-los a  fundo
+
+DIP Dependency Inversion Principle
+
+A ideia é: sempre que uma classe for depender de outra, ela deve depender
+sempre de outro módulo mais estável do que ela mesma. Se A depende de B, a ideia é que B seja mais estável que A
+
+Abstrações devem ser estaveis
+
+De maneira mais elegante, o princípio diz:
+• Módulos de alto nível não devem depender de módulos de baixo nível.
+Ambos devem depender de abstrações.
+
+• Abstrações não devem depender de detalhes. Detalhes devem depender
+de abstrações.
+
+Isso é o que nós chamamos deDependency Inversion Principle, o Princípio
+de Inversão de Dependência. Não confunda isso com“injeção” de dependência.
+Injeção de dependência é a ideia de você ter os parâmetros no construtor,
+e alguém, geralmente um framework, automaticamente injetar essas dependências
+pra você. O nome é parecido. Aqui é o princípio da inversão de
+dependência. Você está invertendo a maneira de você depender das coisas.
+Passa a depender agora de abstrações.
+
+Veja que nosso código segue o DIP. Afinal, a abstração
+AcaoAposGerarNota é uma abstração, estável, e não conhece detalhes
+de implementação. Já a classe GeradorDeNotaFiscal é uma
+implementação, o que faz dela ummódulomais instável,mas que só depende
+de abstrações.
+
+Atencao usar abtracoes quando temos semelhancas entre a classe principa e suas dependencias.
+Quando nao existe semelhanca entre as classe usamos outro tipo de forma para desacoplar
