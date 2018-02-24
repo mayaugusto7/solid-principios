@@ -1,0 +1,17 @@
+OCP Princípio do Aberto-Fechado
+
+Evoluir o código anterior é mais complicado do que parece. Escrever o if é
+fácil; o difícil é saber onde mais alterar. Precisamos fazer com que a criação
+de novas regras seja mais simples, e que essa mudança propague automaticamente
+por todo o sistema.
+
+Um outro conceito que nos ajuda a ter classes coesas e que evoluam mais
+fácil é pensar sempre em escrever classes que são “abertas para extensão”,mas
+“fechadas para modificação” (sim, esse é o famoso Open Closed Principle).
+A ideia é que suas classes sejam abertas para extensão. Ou seja, estender o
+comportamento delas deve ser fácil. Mas, ao mesmo tempo, elas devem ser
+fechadas para alteração. Ou seja, ela não deve ser modificada (ter seu código
+alterado) o tempo todo.
+
+Perceba: a discussão o tempo inteiro é sobre como balancear entre
+acoplamento e coesão. Buscar esse equilíbrio é fundamental!
