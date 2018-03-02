@@ -1,0 +1,11 @@
+É isso que diz a Lei de Demeter. Ela sugere que evitemos o uso de invocações
+em cadeia, como a discutida aqui. O que ganhamos com isso? Encapsulamento.
+E o que eu ganho com encapsulamento? Diminuo propagação de
+mudanças.
+
+Nao criar getters e setters para todos atributos porque?
+
+Getters e setters podem ser bastante perigosos se criados sem parcimônia.
+A partir do momento em que o desenvolvedor dá um setter para um determinado
+atributo da classe, ele está dando a oportunidade de qualquer
+classe cliente modificar aquele valor de qualquer jeito.

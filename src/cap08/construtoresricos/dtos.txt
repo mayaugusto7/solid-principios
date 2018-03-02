@@ -1,0 +1,18 @@
+DTOs, como o próprio nome diz, são data transfer objects. São objetos que
+devem ser usados para transmitir informações de um lado para o outro
+
+Um exemplo análogo são relatórios. Muitos relatórios são formados a
+partir do agrupamento de muitos dados diferentes, portanto, não são bem
+representados por uma única interface.
+class DadosDoUsuarioDTO {
+private String nome;
+private Calendar ultimoAcesso;
+private int qtdDeTentativas;
+public DadosDoUsuarioDTO(...) { ... }
+// getters e setters
+}
+
+Não tenhamedo de criar DTOs que representem pedaços do seu sistema.
+Facilite a transferência de dados entre suas camadas; aumente a semântica
+deles. Lembre-se que o problema não é ter DTOs, mas sim só ter DTOs.
+112

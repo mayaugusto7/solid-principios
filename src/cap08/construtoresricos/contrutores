@@ -1,0 +1,8 @@
+Objetivo garantir a consistencia do objetoe essa  responsabilidade
+e do proprio objeto, padroes de projeto que ajudam a resolver essa
+situacao sao os Builder e Factory.
+
+Imagine uma classe Carro, que
+tem como atributos Pneu e Motor. Todo carro tem pneu e motor, mas você
+é capaz de prover um pneu e ummotor padrões. Nesse caso, por que não dois
+construtores, sendo que um deles provê os valores padrão?

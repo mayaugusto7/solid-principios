@@ -1,0 +1,22 @@
+Classes como essa, que representamuma pequena parte do nosso sistema
+e praticamente não têm comportamentos, são conhecidas por tiny types.
+
+// sem tiny types, você precisa inferir o que significa aquela
+// string
+Aluno aluno = new Aluno(
+"Mauricio Aniche",
+"mauricioaniche@gmail.com",
+"Rua Vergueiro",
+"São Paulo",
+"11 1234-5678",
+"12345678901"
+);
+
+// com tiny types, o próprio tipo deixa isso claro.
+Aluno aluno = new Aluno(
+new Nome("Mauricio Aniche"),
+new Email("mauricioaniche@gmail.com"),
+new Endereco("Rua Vergueiro", "São Paulo"),
+new Telefone("11 1234-5678"),
+new CPF("12345678901")
+);
